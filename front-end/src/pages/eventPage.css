@@ -1,0 +1,21 @@
+.AppContent {
+    margin-left: 12.8vw;
+    margin-right: 12.8vw;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    padding: 6vh 0vh 6vh 4.5vw;
+}
+
+.mcss-logo {
+    height: 15vh;
+    min-height: 30px;
+    
+}
+
+.test {
+    height: 500px;
+    background-color: blue;
+}

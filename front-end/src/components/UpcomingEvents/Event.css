@@ -1,0 +1,263 @@
+@import "react-image-gallery/styles/css/image-gallery.css";
+
+.admin-buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.Edit-Button {
+    font-size: 17px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+.Edit-Button:hover {
+    text-decoration: underline;
+}
+
+.delete-announcement-button {
+    font-size: 30px;
+    color: rgb(255, 67, 67);
+}
+
+.Cancel {
+    margin-right: 20px;
+    float: left;
+}
+
+.Delete {
+    float: right;
+}
+
+/* Parent Container for a single expanded upcoming event  */
+.home-event-collapsed {
+    background-color: #1D1D1D;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    height: 70px;
+    transition: 150ms;
+}
+
+/* Parent Container for a single expanded upcoming event  */
+.home-event-expanded {
+    background-color: #1D1D1D;
+    display: flex;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    height: 350px;
+    transition: 150ms;
+}
+
+
+
+
+/************************ EXPANDED EVENT STYLINGS ************************/
+/* Container for all text: Title, date, description*/
+.home-event-expanded-left { 
+    width: 64%;
+    height: 100%;
+    /* position: relative; */
+    display: flex;
+    flex-direction: column;
+    padding-left: 20px;
+    padding-top: 15px;
+    padding-bottom: 20px;
+    padding-right: 20px;
+}
+
+/* Title stylings */
+.home-expanded-title {
+    font-size: 20px;
+    color: #CD96F9;
+    display: -webkit-box;   
+    -webkit-line-clamp: 1;   
+    -webkit-box-orient: vertical;     
+    overflow: hidden;
+    text-align: left;
+}
+
+/* Description box stylings */
+.home-expanded-desc {
+    height: 218px;
+    position: relative;
+    overflow-y: scroll;
+}
+
+.last-line-spacer {
+    height: 2em;
+}
+
+.dick {
+    flex-grow: 1;
+    position: relative;
+}
+
+::-webkit-scrollbar {
+    width: 0;  /* Remove scrollbar space */
+    background: transparent;  /* Optional: just make scrollbar invisible */
+}
+
+.home-expanded-desc-fade {
+    content: "";
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 2em;
+    background: linear-gradient(to bottom, rgba(255, 255, 255, 0), rgb(29, 29, 29) 60%);
+}
+
+/* Date stylings */
+.home-expanded-time {
+    margin: 10px 0px 5px;
+    font-size: 15px;
+    color: #24A4D3;    
+    text-align: left;
+}
+
+
+/* Stylings for buttons and their containers */
+.event-buttons-area {
+    display: flex;
+    justify-content: space-between;
+    padding-right: 10%;
+    align-items: center;
+    height: 30px;
+}
+
+/* Default stylings for the two buttons Learn More and Expanded */
+.event-button {
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 40%;
+    height: 30px;
+}
+
+.LearnMore-Button {
+    background-color: #55B5D3;
+}
+
+.LearnMore-Button a {
+    color: inherit;
+    width: 100%;
+    line-height: 30px;
+}
+
+.LearnMore-Button:hover a  {
+    color: inherit;
+    text-decoration: none;
+}
+
+.Register-Button {
+    background-color: #CD96F9;
+}
+
+
+.Register-Button-disabled {
+    border: solid 2px #888888;
+    transition: 150ms;
+    cursor: default;
+    color:#888888
+}
+
+.home-expanded-right { 
+    position: relative;
+    width: 36%;
+    padding-top: 40px;
+    padding-right: 30px;
+    padding-bottom: 30px;
+}
+
+/* Image container */
+.Inner-Picture-container {
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+
+/* Stylings for the image itself */
+.Inner-Picture-container div{
+    height: 100%;
+}
+
+.Inner-Picture-container .image-gallery-image{
+    height: 100%;
+    width: auto;
+}
+
+.home-quill {
+    color: #ffffff;
+}
+
+
+.home-quill .ql-editor {
+    padding: 0px;
+}
+
+.Chevron-event{
+    font-size: 25px;
+    color: white;
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    transition: 150ms;
+}
+
+.clickable {
+    cursor: pointer;
+}
+
+.chevron-right {
+    transform: rotate(-90deg);
+    transition: 150ms;
+}
+/************************ END OF EXPANDED EVENT STYLINGS  ************************/
+
+
+
+
+/************************    COLLAPSED EVENT STYLINGS     ************************/ 
+.home-collapsed-head {
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    justify-content: center;
+    padding-left: 20px;
+}
+
+.home-collapsed-right {
+    position: relative;
+    width: 10%;
+}
+
+.home-collapsed-title {
+    font-size: 20px;
+    color: #CD96F9;
+    display: -webkit-box;   
+    -webkit-line-clamp: 1;   
+    -webkit-box-orient: vertical;     
+    text-align: left;
+}
+
+.home-collapsed-time {
+    margin: 0 !important;
+    font-size: 15px;
+    color: #24A4D3;   
+    text-align: left;
+}
+
+/************************ END OF COLLAPSED EVENT STYLINGS ************************/

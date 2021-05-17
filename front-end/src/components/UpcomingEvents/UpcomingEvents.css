@@ -1,0 +1,23 @@
+.Main-Container {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    padding-bottom: 100px;
+}
+
+
+/* Container for main subtitle and calendar icon */
+.Subtitle-Container {
+    margin-left: 15px;
+    text-align: left;
+    font-size: 28px;
+    color: #84BAD3;
+    display: flex;
+    margin-bottom: 3vmin;
+}
+
+.Calendar-Icon {
+    font-size: 36px;
+    color: #FFFFFF;
+    margin-left: 15px;
+}

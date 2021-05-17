@@ -1,0 +1,28 @@
+.App {
+  text-align: center;
+  background-color: #000;
+}
+
+.menu-button {
+  font-size: 2rem;
+  color: white;
+  background: none;
+  cursor: pointer;
+}
+
+.menu-button:hover{
+  color: white;
+}
+
+.menu-button-area {
+  z-index: 2;
+  height: 80px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding-right: 30px;
+  width: auto;
+  position: fixed;
+  right: 0;
+  background: none;
+}

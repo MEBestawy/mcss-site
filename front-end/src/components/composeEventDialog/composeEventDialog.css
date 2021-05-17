@@ -1,0 +1,86 @@
+.image-uploader > .fileContainer {
+    box-shadow: none;
+}
+
+.sub-event-banner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-right: 10px;
+}
+
+.plus-button {
+    font-size: 30px;
+}
+
+.plus-button:hover {
+    font-weight: bold;
+    color:rgb(136,115,180)
+}
+
+.sending {
+    cursor: wait;
+}
+
+.delete-button {
+    font-size: 20px;
+}
+
+.delete-button:hover {
+    font-weight: bold;
+    color:rgb(136,115,180)
+}
+
+.sub-event-container {
+    padding: 20px 0px 20px 20px;
+    border-top: 2px solid rgb(184, 184, 184);;
+}
+
+.bounds .ql-container {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: #fefcfc;
+}
+
+.ql-toolbar {
+    background-color: #f3f3f3;
+    color: #000000;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+
+.existing-imgs-grid {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.image-group-border {
+    border: 1px solid rgb(204, 204, 204);
+    border-radius: 5px;
+}
+
+.existing-img {
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background-color: #5f5f5f;
+    overflow: hidden;
+    justify-content: center;
+    display: flex;
+    margin-right: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #55B5D3;
+}
+
+.delete-existing-img-button{
+    font-size: 30px;
+    color: rgb(255, 67, 67);
+    position: absolute;
+    top: -3px;
+    right: -3px;
+}
+
+.clickable {
+    cursor: pointer;
+}

@@ -1,0 +1,85 @@
+.pastEventsPictureCollage {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-items: stretch;
+  align-content: flex-start;
+
+  padding-left: 5px;
+  margin: 10;
+  border-left: 2px solid;
+}
+.purpleBorder {
+  border-color: #8770b1;
+}
+
+.pastEventTitle {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.purpText {
+  color: #8770b1;
+}
+
+.blueText {
+  color: #9cdaf7;
+}
+
+.blueBorder {
+  border-color: #9cdaf7;
+}
+
+.image-place * {
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.image-place {
+  position: relative;
+  margin: 8px;
+}
+
+@media screen and (min-width: 800px) {
+  .pastEventTitle {
+    font-size: 1.4em;
+  }
+
+  .image-place * {
+    max-width: 250px;
+    max-height: 250px;
+  }
+
+  .image-place {
+    margin: 15px;
+  }
+}
+
+.plus {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+  font-size: 40px;
+}
+
+.del {
+  color: red;
+  position: absolute;
+  right: 0;
+  top: 0;
+  margin: 0;
+}
+
+.delPost {
+  color: red;
+  left: 20px;
+  position: relative;
+}
+
+.clickable {
+  cursor: pointer;
+}
